@@ -502,8 +502,7 @@ img {
    align-items: center;
    margin-top: 1.5rem;    
    margin-bottom: 1.5rem; 
-   margin-right: 4.5rem;
-   margin-left: 4.5rem;
+   margin-right: 4.5rem;   
    padding-top: 1rem; 
    padding-left: 1rem; 
    padding-bottom: 1rem; 
@@ -696,10 +695,8 @@ img {
    font-size: var(--h3-font-size);
    font-weight: var(--font-bold);
    margin-bottom: var(--mb-1-5);
-   margin-top: var(--mb-1-5);
-   font-weight: var(--font-medium);
+   margin-top: var(--mb-1-5);   
    text-align: center;
-
    display: grid;
    grid-template-rows: auto auto; /* Define dos filas */
    row-gap: 0.1rem; /* Espaciado entre las filas */
@@ -1245,8 +1242,7 @@ img {
    font-size: var(--h3-font-size);
    font-weight: var(--font-bold);
    margin-bottom: var(--mb-1-5);
-   margin-top: var(--mb-1-5);
-   font-weight: var(--font-medium);
+   margin-top: var(--mb-1-5);   
    text-align: center;
 
    /* display: grid;
@@ -2162,7 +2158,7 @@ img {
       filter: drop-shadow( 0 10px 5px rgba(0, 0, 0, 0.8));
   }
   .team__img {
-   width: 17.5rem;
+   width: 20rem;
   
 
 }

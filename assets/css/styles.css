@@ -336,7 +336,6 @@ img {
    display: flex; /* Cambia de inline-flex a flex */
    gap: 2rem;
    justify-content: flex-start; /* Alinea los íconos a la izquierda */
-   margin-top: var(--mb-1);
    margin-bottom: var(--mb-1-5);
    margin-left: 0.25rem;
    background-color: transparent;
@@ -706,7 +705,7 @@ img {
    text-align: center;
    margin-bottom: var(--mb-2-5);
    font-size: var(--normal-font-size);
-   font-weight: var(--font-bold);
+   font-weight: var(--font-semi-bold);
    margin-top: var(--mb-1-5);
    
 }
@@ -927,7 +926,7 @@ img {
  
  .team__info-title {
    font-size: var(--h2-font-size);
-   font-weight: var(--font-semi-bold);
+   font-weight: var(--font-bold);
    color: var(--title-color);
  }
  

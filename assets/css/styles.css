@@ -349,8 +349,8 @@ img {
    background-color: rgba(44, 62, 80, 0); 
 }
 .home__social-icon-img {
-   width: 40px; /* Ajusta el tamaño según tus necesidades */
-   height: 40px; /* Ajusta el tamaño según tus necesidades */
+   width: 2.5rem; /* Ajusta el tamaño según tus necesidades */
+   height: 2.5rem; /* Ajusta el tamaño según tus necesidades */
    display: block;
    border-radius: 0.5rem;
    filter: drop-shadow( 0 10px 5px rgba(0, 0, 0, 0.8));
@@ -364,12 +364,12 @@ img {
 
 
 .home__blob {
-   width: 200px;
+   width: 12.5rem;
    fill: var(--first-color);
 }
 
 .home__img {
-   width: 320px;
+   width: 20rem;
    border-radius: 0.5rem;
    justify-self: center;
    align-self: center;
@@ -390,8 +390,8 @@ img {
 }
 
 .home__icon {
-   width: 4px; /* Ajusta el tamaño del rectángulo según sea necesario */
-   height: 30px; /* Ajusta el tamaño del rectángulo según sea necesario */
+   width: 0.25rem; /* Ajusta el tamaño del rectángulo según sea necesario */
+   height: 1.875rem; /* Ajusta el tamaño del rectángulo según sea necesario */
    background-color: #2c3e50; /* Color de fondo del rectángulo */   
    margin-right: 0.75rem; /* Espacio entre el rectángulo y el texto */
    
@@ -553,7 +553,7 @@ img {
 
 
 .about__img {
-   width: 250px;
+   width: 15.625rem;
    border-radius: 0.5rem;
    /* justify-self: center; */
    align-self: flex-end;
@@ -634,8 +634,8 @@ img {
 }
 
 .about-icon1-img {
-   width: 75px; /* Ajusta el tamaño de los íconos si es necesario */
-   height: 120px; /* Ajusta el tamaño de los íconos si es necesario */
+   width: 4.688rem; /* Ajusta el tamaño de los íconos si es necesario */
+   height: 7.5rem; /* Ajusta el tamaño de los íconos si es necesario */
    filter: drop-shadow(0 10px 5px rgba(0, 0, 0, 0.8));   
    transition:1.5s;
    display: block;  
@@ -648,8 +648,8 @@ img {
 } 
 
 .about-icon2-img {
-   width: 130px; /* Ajusta el tamaño de los íconos si es necesario */
-   height: 120px; /* Ajusta el tamaño de los íconos si es necesario */
+   width: 8.125rem; /* Ajusta el tamaño de los íconos si es necesario */
+   height: 7.5rem; /* Ajusta el tamaño de los íconos si es necesario */
    filter: drop-shadow(0 10px 5px rgba(0, 0, 0, 0.8));
    transition:1.5s;
    display: block;  
@@ -662,8 +662,8 @@ img {
 }
 
 .about-icon3-img {
-   width: 140px; /* Ajusta el tamaño de los íconos si es necesario */
-   height: 120px; /* Ajusta el tamaño de los íconos si es necesario */
+   width: 8.75rem; /* Ajusta el tamaño de los íconos si es necesario */
+   height: 7.5rem; /* Ajusta el tamaño de los íconos si es necesario */
    filter: drop-shadow(0 10px 5px rgba(0, 0, 0, 0.8));
    transition:1.5s;
    display: block;  
@@ -676,8 +676,8 @@ img {
 }
 
 .about-icon4-img {
-   width: 120px; /* Ajusta el tamaño de los íconos si es necesario */
-   height: 120px; /* Ajusta el tamaño de los íconos si es necesario */
+   width: 7.5rem; /* Ajusta el tamaño de los íconos si es necesario */
+   height: 7.5rem; /* Ajusta el tamaño de los íconos si es necesario */
    filter: drop-shadow(0 10px 5px rgba(0, 0, 0, 0.8));
    transition:1.5s;
    display: block;  
@@ -783,7 +783,7 @@ img {
  
  
  .team__container:hover .overlay {
-   height: 40%;
+   height: 50%;
    width: 100%;
    justify-self: center;
    align-content: center; 
@@ -817,7 +817,7 @@ img {
  
  .overlay__text a {
    color: #FFF;
-   font-size: 20px;
+   font-size: var(--h3-font-size);
    margin: 0 0.5rem; /* Añadido para espacio entre íconos */
    transition: color 0.3s ease; /* Transición suave para hover */
  }
@@ -830,12 +830,12 @@ img {
    display: flex;
    gap: 1rem;
    justify-content: center;
-   margin-top: 1rem;
+   margin-top: 0.75rem;
  }
  
  .social__networks-icon-img {
-   width: 30px;
-   height: 30px;
+   width: 1.875rem;
+   height: 1.875rem;
    display: block;
    border-radius: 0.5rem;
    filter: drop-shadow(0 10px 5px rgba(0, 0, 0, 0.8));
@@ -980,8 +980,8 @@ img {
    justify-content: center;
 }
 .services1-icon-img {
-   width: 90px; /* Ajusta el tamaño de los íconos si es necesario */
-   height: 120px; /* Ajusta el tamaño de los íconos si es necesario */  
+   width: 5.625rem; /* Ajusta el tamaño de los íconos si es necesario */
+   height: 7.5rem; /* Ajusta el tamaño de los íconos si es necesario */  
    /* display: block;   
    transition: transform 1s ease;*/
    animation: icon1 5s infinite; 
@@ -1015,8 +1015,8 @@ img {
 } */
 
 .services2-icon-img {
-   width: 90px; /* Ajusta el tamaño de los íconos si es necesario */
-   height: 120px; /* Ajusta el tamaño de los íconos si es necesario */
+   width: 5.625rem; /* Ajusta el tamaño de los íconos si es necesario */
+   height: 7.5rem; /* Ajusta el tamaño de los íconos si es necesario */
    /* display: block;  
    transition: transform 1s ease; */
    animation: icon2 5s infinite; 
@@ -1047,8 +1047,8 @@ img {
 } */
 
 .services3-icon-img {
-   width: 140px; /* Ajusta el tamaño de los íconos si es necesario */
-   height: 120px; /* Ajusta el tamaño de los íconos si es necesario */
+   width: 8.75rem; /* Ajusta el tamaño de los íconos si es necesario */
+   height: 7.5rem; /* Ajusta el tamaño de los íconos si es necesario */
    /* display: block;   
    transition: transform 1s ease;*/
    animation: icon3 5s infinite; 
@@ -1080,8 +1080,8 @@ img {
 } */
 
 .services4-icon-img {
-   width: 95px; /* Ajusta el tamaño de los íconos si es necesario */
-   height: 120px; /* Ajusta el tamaño de los íconos si es necesario */
+   width: 5.938rem; /* Ajusta el tamaño de los íconos si es necesario */
+   height: 7.5rem; /* Ajusta el tamaño de los íconos si es necesario */
    /* display: block;   
    transition: transform 1s ease;*/
    animation: icon4 5s infinite; 
@@ -1111,8 +1111,8 @@ img {
    transform: rotate(-30deg);
 } */
 .services5-icon-img {
-   width: 110px; /* Ajusta el tamaño de los íconos si es necesario */
-   height: 120px; /* Ajusta el tamaño de los íconos si es necesario */
+   width: 6.875rem; /* Ajusta el tamaño de los íconos si es necesario */
+   height: 7.5rem; /* Ajusta el tamaño de los íconos si es necesario */
    /* display: block;   
    transition: transform 1s ease;*/
    animation: icon5 5s infinite; 
@@ -1142,8 +1142,8 @@ img {
    transform: rotate(30deg);
 } */
 .services6-icon-img {
-   width: 120px; /* Ajusta el tamaño de los íconos si es necesario */
-   height: 120px; /* Ajusta el tamaño de los íconos si es necesario */
+   width: 7.5rem; /* Ajusta el tamaño de los íconos si es necesario */
+   height: 7.5rem; /* Ajusta el tamaño de los íconos si es necesario */
    /* display: block;   
    transition: transform 1s ease;*/
    animation: icon6 5s infinite; 
@@ -1173,8 +1173,8 @@ img {
    transform: rotate(-30deg);
 } */
 .services7-icon-img {
-   width: 100px; /* Ajusta el tamaño de los íconos si es necesario */
-   height: 120px; /* Ajusta el tamaño de los íconos si es necesario */
+   width: 6.25rem; /* Ajusta el tamaño de los íconos si es necesario */
+   height: 7.5rem; /* Ajusta el tamaño de los íconos si es necesario */
    /* display: block;   
    transition: transform 1s ease;*/
    animation: icon7 5s infinite; 
@@ -1204,8 +1204,8 @@ img {
    transform: rotate(30deg);
 } */
 .services8-icon-img {
-   width: 100px; /* Ajusta el tamaño de los íconos si es necesario */
-   height: 140px; /* Ajusta el tamaño de los íconos si es necesario */
+   width: 6.25rem; /* Ajusta el tamaño de los íconos si es necesario */
+   height: 8.75rem; /* Ajusta el tamaño de los íconos si es necesario */
    /* display: block;   
    transition: transform 1s ease;*/
    animation: icon8 5s infinite; 
@@ -1366,12 +1366,12 @@ img {
 }
 
 .map__blob {
-   width: 200px;
+   width: 12.5rem;
    fill: var(--first-color);
 }
 
 .map__img {
-   width: 320px;
+   width: 20rem;
    border-radius: 0.5rem;
    justify-self: center;
    align-self: center;
@@ -1393,8 +1393,8 @@ img {
 }
 
 .map__icon {
-   width: 4px; /* Ajusta el tamaño del rectángulo según sea necesario */
-   height: 30px; /* Ajusta el tamaño del rectángulo según sea necesario */
+   width: 0.25rem; /* Ajusta el tamaño del rectángulo según sea necesario */
+   height: 1.875rem; /* Ajusta el tamaño del rectángulo según sea necesario */
    background-color: #2c3e50; /* Color de fondo del rectángulo */   
    margin-right: 0.75rem; /* Espacio entre el rectángulo y el texto */
    
@@ -1467,8 +1467,8 @@ img {
 }
 
 .map__social-icon-img {
-   width: 40px; /* Ajusta el tamaño según tus necesidades */
-   height: 40px; /* Ajusta el tamaño según tus necesidades */
+   width: 2.5rem; /* Ajusta el tamaño según tus necesidades */
+   height: 2.5rem; /* Ajusta el tamaño según tus necesidades */
    display: block;
    border-radius: 0.5rem;
    filter: drop-shadow( 0 10px 5px rgba(0, 0, 0, 0.8));
@@ -1577,9 +1577,9 @@ img {
 }
 
 .footer__logo-img {
-   width: 50px; /* Ajusta el tamaño de la imagen según sea necesario */
+   width: 3.125rem; /* Ajusta el tamaño de la imagen según sea necesario */
    height: auto;
-   margin-right: 10px; /* Espacio entre la imagen y el h3 */
+   margin-right: 0.625rem; /* Espacio entre la imagen y el h3 */
 }
 
 .footer__logo span {
@@ -1597,7 +1597,7 @@ img {
    color: #FFF;
    font-weight: var(--font-semi-bold);
    font-size: var(--h3-font-size);
-   margin-top: 0.85rem;
+   margin-top: 1.85rem;
    margin-bottom: 1rem;
    margin-left:1.75rem;
    
@@ -1609,7 +1609,7 @@ img {
    color: #FFF;
    font-weight: var(--font-semi-bold);
    font-size: var(--h3-font-size);
-   margin-top: 0.85rem;
+   margin-top: 1.85rem;
    margin-bottom: 1rem;
    
 }
@@ -1637,10 +1637,10 @@ img {
 
 
 .footer__hours {
-    margin-bottom: var(--mb-2-5);
+    margin-bottom: var(--mb-2);
     font-size: var(--normal-font-size);
     font-weight: var(--font-semi-bold);
-    margin-top: var(--mb-3);
+    margin-top: var(--mb-2);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1649,8 +1649,8 @@ img {
 }
 
 .footer__hours-icon-img {
-   width: 30px; /* Ajusta el tamaño según tus necesidades */
-   height: 30px; /* Ajusta el tamaño según tus necesidades */
+   width: 1.875rem; /* Ajusta el tamaño según tus necesidades */
+   height: 1.875rem; /* Ajusta el tamaño según tus necesidades */
    margin-left: 1.5rem;
    display: block;
    border-radius: 0.5rem;
@@ -1683,8 +1683,8 @@ img {
 }
 
 .footer__social-icon-img {
-   width: 30px; /* Ajusta el tamaño según tus necesidades */
-   height: 30px; /* Ajusta el tamaño según tus necesidades */
+   width: 1.875rem; /* Ajusta el tamaño según tus necesidades */
+   height: 1.875rem; /* Ajusta el tamaño según tus necesidades */
    display: block;
    border-radius: 0.5rem;
    filter: drop-shadow( 0 10px 5px rgba(0, 0, 0, 0.8));
@@ -1704,7 +1704,7 @@ img {
 /*========== SCROLL UP ==========*/
 .scrollup {
    position: fixed;
-   right: 3.5rem;
+   right: 1.75rem;
     
    background-color: var(--first-color);
    opacity: 0.8; 
@@ -1722,13 +1722,13 @@ img {
  }
  
  .scrollup__icon {
-   font-size: 2rem;
+   font-size: 1.75rem;
    color: #fff; 
  }
  
  /* Show scroll */
  .show-scroll {
-   bottom: 4rem;
+   bottom: 5rem;
  }
 
 
@@ -1736,12 +1736,12 @@ img {
 ::-webkit-scrollbar{
    width: 0.6rem;
    background-color: var(--scroll-bar-color);
-   border-radius: .5rem;
+   border-radius: 0.5rem;
 }
 
 ::-webkit-scrollbar-thumb{
    background-color: var(--scroll-thumb-color);
-   border-radius: .5rem;
+   border-radius: 0.5rem;
 }
 
 ::-webkit-scrollbar-thumb:hover{
@@ -1760,7 +1760,7 @@ img {
    }
 
    .nav__menu{
-      padding: 2rem .25rem 4rem;
+      padding: 2rem 0.25rem 4rem;
    }
 
    .nav__list{
@@ -1775,15 +1775,15 @@ img {
    }
 
    .about-icon-img {
-      width: 110px; /* Ajusta el tamaño de los íconos si es necesario */
-      height: 80px; /* Ajusta el tamaño de los íconos si es necesario */ 
+      width: 6.875rem; /* Ajusta el tamaño de los íconos si es necesario */
+      height: 5rem; /* Ajusta el tamaño de los íconos si es necesario */ 
    }
 
    .home__content{
       grid-template-columns: .25fr 3fr;
    }
    .home__img{
-      width: 180px;
+      width: 11.25rem;
    }
 
    .home__social {
@@ -1791,8 +1791,8 @@ img {
    }
    
    .home__social-icon-img {
-      width: 30px; /* Ajusta el tamaño de los íconos si es necesario */
-      height: 30px; /* Ajusta el tamaño de los íconos si es necesario */
+      width: 1.875rem; /* Ajusta el tamaño de los íconos si es necesario */
+      height: 1.875rem; /* Ajusta el tamaño de los íconos si es necesario */
    }
 
    .skills__title{
@@ -1800,7 +1800,7 @@ img {
    }
 
    .qualification__data{
-      gap: .5rem;
+      gap: 0.5rem;
    }
 
    .services__container{
@@ -1813,14 +1813,14 @@ img {
    }
 
    .services__modal{
-      padding: 0 .5rem ;
+      padding: 0 0.5rem ;
    }
 
    .map__content{
-      grid-template-columns: .25fr 3fr;
+      grid-template-columns: 0.25fr 3fr;
    }
    .map__img{
-      width: 180px;
+      width: 11.25rem;
    }
 
    .map__social {
@@ -1828,16 +1828,16 @@ img {
    }
    
    .map__social-icon-img {
-      width: 30px; /* Ajusta el tamaño de los íconos si es necesario */
-      height: 30px; /* Ajusta el tamaño de los íconos si es necesario */
+      width: 1.875rem; /* Ajusta el tamaño de los íconos si es necesario */
+      height: 1.875rem; /* Ajusta el tamaño de los íconos si es necesario */
    }
    .services-icon-img {
-      width: 110px; /* Ajusta el tamaño de los íconos si es necesario */
-      height: 80px; /* Ajusta el tamaño de los íconos si es necesario */
+      width: 6.875rem; /* Ajusta el tamaño de los íconos si es necesario */
+      height: 5rem; /* Ajusta el tamaño de los íconos si es necesario */
    }
 
    .project__img{
-      width: 200px;
+      width: 12.5rem;
    }
 
    .testimonial__data,
@@ -1906,8 +1906,8 @@ img {
    }
    
    .home__social-icon-img {
-      width: 35px; /* Ajusta el tamaño de los íconos si es necesario */
-      height: 35px; /* Ajusta el tamaño de los íconos si es necesario */
+      width: 2.188rem; /* Ajusta el tamaño de los íconos si es necesario */
+      height: 2.188rem; /* Ajusta el tamaño de los íconos si es necesario */
    }
 
    
@@ -1920,12 +1920,12 @@ img {
    }
 
    .about-icon-img {
-      width: 110px; /* Ajusta el tamaño de los íconos si es necesario */
-      height: 80px; /* Ajusta el tamaño de los íconos si es necesario */
+      width: 6.875rem; /* Ajusta el tamaño de los íconos si es necesario */
+      height: 5rem; /* Ajusta el tamaño de los íconos si es necesario */
    }
 
    .team__img {
-      width: 280px;
+      width: 17.5rem;
      
 
    }
@@ -1950,8 +1950,8 @@ img {
     .map__data{
       grid-column: initial;
       display: flex;
-   flex-direction: column; 
-   gap: 1rem; 
+      flex-direction: column; 
+      gap: 1rem; 
 
    }   
 
@@ -1962,13 +1962,13 @@ img {
    
    
    .map__social-icon-img {
-      width: 35px; /* Ajusta el tamaño de los íconos si es necesario */
-      height: 35px; /* Ajusta el tamaño de los íconos si es necesario */
+      width: 2.188rem; /* Ajusta el tamaño de los íconos si es necesario */
+      height: 2.188rem; /* Ajusta el tamaño de los íconos si es necesario */
    }
 
    .services-icon-img {
-      width: 110px; /* Ajusta el tamaño de los íconos si es necesario */
-      height: 80px; /* Ajusta el tamaño de los íconos si es necesario */
+      width: 6.875rem; /* Ajusta el tamaño de los íconos si es necesario */
+      height: 5rem; /* Ajusta el tamaño de los íconos si es necesario */
    }
 
    .team__container,
@@ -2007,7 +2007,7 @@ img {
       margin-bottom: 0;
   }
   .footer__logo span {   
-   margin-left: .45rem;
+   margin-left: 0.45rem;
    }
 }
 
@@ -2096,7 +2096,7 @@ img {
    }
 
    .home__img{
-      width: 400px;
+      width: 25rem;
    }
 
    .home__social {
@@ -2104,8 +2104,8 @@ img {
    }
    
    .home__social-icon-img {
-      width: 40px; /* Ajusta el tamaño de los íconos si es necesario */
-      height: 40px; /* Ajusta el tamaño de los íconos si es necesario */
+      width: 25rem; /* Ajusta el tamaño de los íconos si es necesario */
+      height: 25rem; /* Ajusta el tamaño de los íconos si es necesario */
    }
 
    .home__scroll{
@@ -2124,7 +2124,7 @@ img {
    }
 
    .about__img{
-      width: 280px;
+      width: 17.5rem;
    }
 
    .about__description{
@@ -2146,14 +2146,14 @@ img {
       
    }
    .about-icon-img {
-      width: 110px; /* Ajusta el tamaño de los íconos si es necesario */
-      height: 80px; /* Ajusta el tamaño de los íconos si es necesario */
+      width: 6.875rem; /* Ajusta el tamaño de los íconos si es necesario */
+      height: 5rem; /* Ajusta el tamaño de los íconos si es necesario */
       display: block;
       border-radius: 0.5rem;
       filter: drop-shadow( 0 10px 5px rgba(0, 0, 0, 0.8));
   }
   .team__img {
-   width: 280px;
+   width: 17.5rem;
   
 
 }
@@ -2210,8 +2210,8 @@ img {
       
    }
    .services-icon-img {
-      width: 110px; /* Ajusta el tamaño de los íconos si es necesario */
-      height: 80px; /* Ajusta el tamaño de los íconos si es necesario */
+      width: 6.875rem; /* Ajusta el tamaño de los íconos si es necesario */
+      height: 5rem; /* Ajusta el tamaño de los íconos si es necesario */
       display: block;
       border-radius: 0.5rem;
       filter: drop-shadow( 0 10px 5px rgba(0, 0, 0, 0.8));
@@ -2220,7 +2220,7 @@ img {
    
 
    .services__modal-content{
-      width: 450px;
+      width: 28.125rem;
    }
 
    .map__container{
@@ -2240,7 +2240,7 @@ img {
    
    }  
    .map__img{
-      width: 320px;
+      width: 20rem;
    }
 
    .map__social {
@@ -2250,16 +2250,16 @@ img {
    }
    
    .map__social-icon-img {
-      width: 40px; /* Ajusta el tamaño de los íconos si es necesario */
-      height: 40px; /* Ajusta el tamaño de los íconos si es necesario */
+      width: 2.5rem; /* Ajusta el tamaño de los íconos si es necesario */
+      height: 2.5rem; /* Ajusta el tamaño de los íconos si es necesario */
    }
    .services-icon-img {
-      width: 110px; /* Ajusta el tamaño de los íconos si es necesario */
-      height: 80px; /* Ajusta el tamaño de los íconos si es necesario */
+      width: 6.875rem; /* Ajusta el tamaño de los íconos si es necesario */
+      height: 5rem; /* Ajusta el tamaño de los íconos si es necesario */
    }
 
    .project__img{
-      width: 320px;
+      width: 20rem;
    }
    
    .portfolio__content{
@@ -2283,7 +2283,7 @@ img {
    }
 
    .project__data{
-      padding-top: .8rem;
+      padding-top: 0.8rem;
    }
 
    .footer__container {
@@ -2296,7 +2296,7 @@ img {
       justify-content: center;
   }
   .footer__logo span {   
-   margin-left: .5rem;
+   margin-left: 0.5rem;
    }
 }
 
@@ -2309,7 +2309,7 @@ img {
    }
 
    .home__img{
-      width: 320px;
+      width: 20rem;
    }
 
    .home__social{
@@ -2318,7 +2318,7 @@ img {
    }
 
    .map__img{
-      width: 320px;
+      width: 20rem;
    }
 
    .map__social{
@@ -2353,7 +2353,7 @@ img {
    }
 
    .contact__form{
-      width: 460px;
+      width: 28.75rem;
    }
 
    .contact__inputs{

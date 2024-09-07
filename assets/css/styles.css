@@ -199,8 +199,8 @@ img {
 
 .container {
    max-width: 768px;
-   margin-left: var(--mb-3);
-   margin-right: var(--mb-3);
+   margin-left: var(--mb-1-5);
+   margin-right: var(--mb-2);
 }
 
 .grid {
@@ -913,6 +913,7 @@ img {
 
  .team__description {
    text-align: center;
+   font-weight: var(--font-semi-bold);
    margin-bottom: var(--mb-2-5);
    /* color: var(--title-color); */
  }

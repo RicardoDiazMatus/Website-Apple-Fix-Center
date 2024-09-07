@@ -2104,8 +2104,8 @@ img {
    }
    
    .home__social-icon-img {
-      width: 25rem; /* Ajusta el tamaño de los íconos si es necesario */
-      height: 25rem; /* Ajusta el tamaño de los íconos si es necesario */
+      width: 2.813rem; /* Ajusta el tamaño de los íconos si es necesario 2.813rem=45px o 2.5rem=40px*/
+      height: 2.813rem; /* Ajusta el tamaño de los íconos si es necesario 2.813rem=45px o 2.5rem=40px*/
    }
 
    .home__scroll{

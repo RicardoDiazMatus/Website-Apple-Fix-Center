@@ -511,9 +511,9 @@ img {
    display: inline-flex;
    align-items: center;
    margin-top: 1.5rem; 
-   margin-left: 4rem;
+   margin-left: 3rem;
    margin-bottom: 1.5rem; 
-   margin-right: 4rem;
+   margin-right: 3rem;
    padding-top: 1rem;  
    padding-left: 1rem; 
    padding-bottom: 1rem; 
@@ -1588,7 +1588,7 @@ img {
    text-align: right;
    margin-top: 1.25rem;
    margin-right: 0.5rem;
-   font-size: var(--small-font-size);
+   font-size: var(--normal-font-size);
    color: #FFF;
    font-weight: var(--font-semi-bold);
 }
@@ -2119,8 +2119,8 @@ img {
    .about__container{
       gap: 1.75rem;
       grid-template-columns: repeat(4,1fr);
-      margin-top: 1rem; 
-      margin-bottom: 1rem;
+      margin-top: 2rem; 
+      margin-bottom: 2rem;
    }
 
    .about__img{
@@ -2166,6 +2166,8 @@ img {
    .team__description {
       text-align: initial;
       /* text-align: justify; */
+      font-size: var(--normal-font-size);
+      font-weight: var(--font-semi-bold);
       
    }
    .team__info {

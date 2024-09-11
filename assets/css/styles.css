@@ -2378,3 +2378,87 @@ img {
    margin-left: 4.25rem;
 }
 }
+
+.preloader{   
+   background-color: #141d25;
+   height: 100vh;
+   width: 100%;
+   position: fixed; /* Fija el preloader en la pantalla */
+   top: 0;
+   left: 0;
+   z-index: 9999; /* Asegúrate de que esté sobre otros elementos */
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center; 
+}
+/* Esconder el contenido principal hasta que la página cargue */
+.main-content {
+   display:block; 
+}
+
+.ring{
+   width: 500px;
+   height: 500px;
+   border: 0px solid #FFF;
+   border-radius: 50%;
+   position: absolute;
+}
+
+.ring:nth-child(1){
+   border-bottom-width: 18px;
+   border-color: rgb(128, 185, 23);
+   animation: rotate1 2s linear infinite;
+}
+.ring:nth-child(2){
+   border-right-width: 18px;
+   border-color: rgb(76, 29, 29);
+   animation: rotate2 2s linear infinite;
+}
+
+.ring:nth-child(3){
+   border-top-width: 18px;
+   border-color: rgb(14, 172, 193);
+   animation: rotate3 2s linear infinite;
+}
+
+@keyframes rotate1{
+   0%{
+      transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+   }
+
+   100%{
+      transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+   }
+}
+
+@keyframes rotate2{
+   0%{
+      transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+   }
+
+   100%{
+      transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+   }
+}
+
+@keyframes rotate3{
+   0%{
+      transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+   }
+
+   100%{
+      transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+   }
+}
+
+.logo-preloader {
+   width: 10%; /* Ajusta el tamaño según tus necesidades */
+   margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+}
+
+.text-preloader{
+   color: #fff;
+   font-size: 1.2em; /* Ajusta el tamaño del texto según sea necesario */
+   text-align: center; /* Alinea el texto al centro */
+}

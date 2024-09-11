@@ -2379,22 +2379,25 @@ img {
 }
 }
 
-.preloader{   
-   background-color: #141d25;
-   height: 100vh;
-   width: 100%;
-   position: fixed; /* Fija el preloader en la pantalla */
-   top: 0;
-   left: 0;
-   z-index: 9999; /* Asegúrate de que esté sobre otros elementos */
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center; 
+.preloader{ 
+      /* background-color: #141d25; */
+      /* background-color: #435f7b;  */
+      background-color: #fff; 
+    height: 100vh;
+    width: 100%;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    z-index: 9999; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
 }
-/* Esconder el contenido principal hasta que la página cargue */
-.main-content {
-   display:block; 
+
+
+.main-content{
+   display: none;
 }
 
 .ring{
@@ -2453,12 +2456,13 @@ img {
 }
 
 .logo-preloader {
-   width: 10%; /* Ajusta el tamaño según tus necesidades */
-   margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+   width: 10%; 
+   margin-bottom: 10px; 
 }
 
 .text-preloader{
-   color: #fff;
-   font-size: 1.2em; /* Ajusta el tamaño del texto según sea necesario */
-   text-align: center; /* Alinea el texto al centro */
-}
+   font-weight: var(--font-black);
+   color: var(--title-color);
+   font-size: 1.2em; 
+   text-align: center; 
+}  

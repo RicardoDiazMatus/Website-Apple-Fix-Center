@@ -94,64 +94,20 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-// function loader() {
-//   const loader = document.getElementById("preloader");
-//   window.addEventListener("load", function()
-//     {
-//       setTimeout(function()
-//         {
-//           loader.style.display = "none";
-//         },1500);      
-//     })
-// };
 
 
-
-
-// Tiempo de visualización en milisegundos
-const DISPLAY_DURATION = 300000; // 300000 ms = 5 minutos
-
-// Función para mostrar el preloader
-function showPreloader() {
-    document.querySelector(".preloader").style.display = "flex";
-    document.querySelector(".preloader").style.opacity = "1"; // Asegúrate de que sea visible
-    document.querySelector(".main-content").style.display = "none";
-}
-
-// Función para ocultar el preloader
-function hidePreloader() {
-    document.querySelector(".preloader").style.opacity = "0"; // Añadir una transición de opacidad
-    document.querySelector(".preloader").style.transition = "opacity 0.5s ease";
-    document.querySelector(".main-content").style.display = "block";
-    
-    // Ocultar el preloader completamente después de la transición
-    setTimeout(() => {
-        document.querySelector(".preloader").style.display = "none";
-    }, 500); // Asegúrate de que coincide con el tiempo de la transición
-}
-
-// Función para manejar el preloader
-function handlePreloader() {
-    const now = Date.now();
-    const preloaderEndTime = localStorage.getItem('preloaderEndTime');
-
-    if (!preloaderEndTime || now > preloaderEndTime) {
-        // Si no hay tiempo registrado o el tiempo registrado ha pasado, mostrar el preloader
-        localStorage.setItem('preloaderEndTime', now + DISPLAY_DURATION);
-        showPreloader();
-    } else {
-        // Si el tiempo registrado no ha pasado, ocultar el preloader
-        hidePreloader();
-    }
-}
-
-// Al cargar el contenido del DOM
 document.addEventListener("DOMContentLoaded", function() {
-    handlePreloader(); // Maneja la visualización del preloader
+  // Seleccionar los elementos por clase
+  var preloader = document.querySelector(".preloader");
+  var maincontent = document.querySelector(".main-content");
 
-    // Cuando toda la página (incluidos los recursos como imágenes) esté completamente cargada
-    window.addEventListener("load", function() {
-        // Al cargar la página, verifica si el preloader aún debe ser mostrado
-        handlePreloader();
-    });
+  if (preloader && maincontent) {
+      // Simular un retraso en la carga para visualizar el preloader
+      setTimeout(function() {
+          preloader.style.display = "none";
+          maincontent.style.display = "block";
+      }, 1500); // El preloader se oculta después de 2 segundos (simulando carga)
+  } else {
+      console.error("No se encontró el preloader o el contenido principal en el DOM");
+  }
 });

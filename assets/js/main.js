@@ -96,17 +96,41 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-document.addEventListener("DOMContentLoaded", function() {
+
+document.addEventListener("DOMContentLoaded", function() { 
   // Seleccionar los elementos por clase
   var preloader = document.querySelector(".preloader");
   var maincontent = document.querySelector(".main-content");
+  var scrollUpButton = document.querySelector("#scroll-up");
 
   if (preloader && maincontent) {
+      // Mostrar el preloader
+      preloader.style.display = "flex";
+      preloader.style.opacity = "1"; // Asegurar que el preloader es visible
+      maincontent.style.display = "none"; // Ocultar el contenido principal
+
+      // Ocultar el botón de scroll-up mientras se muestra el preloader
+      if (scrollUpButton) {
+          scrollUpButton.style.display = "none";
+      }
+
       // Simular un retraso en la carga para visualizar el preloader
       setTimeout(function() {
-          preloader.style.display = "none";
-          maincontent.style.display = "block";
-      }, 1500); // El preloader se oculta después de 2 segundos (simulando carga)
+          // Añadir una transición de desvanecimiento al preloader
+          preloader.style.opacity = "0";
+          preloader.style.transition = "opacity 0.5s ease"; // Suavizar la transición
+
+          // Después de la transición, ocultar completamente el preloader y mostrar el contenido
+          setTimeout(function() {
+              preloader.style.display = "none"; // Ocultar el preloader después de desvanecer
+              maincontent.style.display = "block"; // Mostrar el contenido principal
+              
+              // Mostrar el botón de scroll-up después de que se haya mostrado el contenido
+              if (scrollUpButton) {
+                  scrollUpButton.style.display = "block";
+              }
+          }, 500); // Tiempo que coincide con la transición de opacidad (0.5 segundos)
+      }, 2500); // El preloader se oculta después de 1.5 segundos (simulando carga)
   } else {
       console.error("No se encontró el preloader o el contenido principal en el DOM");
   }

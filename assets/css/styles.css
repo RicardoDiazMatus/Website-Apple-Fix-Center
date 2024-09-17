@@ -1707,9 +1707,10 @@ img {
 
 /*========== SCROLL UP ==========*/
 .scrollup {
+   display: none;
    position: fixed;
    right: 1.75rem;
-    
+   bottom: -5rem; /* Inicialmente fuera de la vista */
    background-color: var(--first-color);
    opacity: 0.8; 
    padding-top: 0.5rem;
@@ -2379,10 +2380,10 @@ img {
 }
 }
 
-.preloader{ 
+/* .preloader{  */
       /* background-color: #141d25; */
       /* background-color: #435f7b;  */
-      background-color: #fff; 
+     /*  background-color: #fff; 
     height: 100vh;
     width: 100%;
     position: fixed; 
@@ -2392,15 +2393,149 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; 
-}
+    align-items: center;
+    
+} */
 
 
-.main-content{
+.main-content {
    display: none;
+}  
+
+ .preloader {
+   background-color: #ffffff; 
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100vh;
+   z-index: 1000;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.loader {
+   display: block;
+   position: absolute;   
+   width: 325px;
+   height: 325px;   
+   border-radius: 50%;
+   border: 6px solid transparent;
+   border-top-color: #3498db;
+   filter: drop-shadow( 0 5px 5px rgba(0, 0, 0, 0.5));
+   transition: border-top-color 0.3s ease-in-out;
+   -webkit-animation: spin 2s linear infinite; 
+   animation: spin 2s linear infinite;  
+   transform: translate(-50%, -50%); 
+} 
+
+.loader:before {
+   content: "";
+   position: absolute;
+   top: 5px;
+   left: 5px;
+   right: 5px;
+   bottom: 5px;
+   border-radius: 50%;
+   border: 6px solid transparent;
+   border-top-color: rgba(231, 76, 60, 0.8);
+   filter: drop-shadow( 0 5px 5px rgba(0, 0, 0, 0.5));
+    transition: border-top-color 0.3s ease-in-out;
+   -webkit-animation: spin 3s linear infinite; 
+     animation: spin 3s linear infinite; 
 }
 
-.ring{
+.loader:after {
+   content: "";
+   position: absolute;
+   top: 15px;
+   left: 15px;
+   right: 15px;
+   bottom: 15px;
+   border-radius: 50%;
+   border: 6px solid transparent;
+   border-top-color: rgba(249, 201, 34, 0.8);
+   filter: drop-shadow( 0 5px 5px rgba(0, 0, 0, 0.5));
+    transition: border-top-color 0.3s ease-in-out;
+   -webkit-animation: spin 1.5s linear infinite; 
+     animation: spin 1.5s linear infinite; 
+}
+
+@-webkit-keyframes spin {
+   0%   {
+       -webkit-transform: rotate(0deg);  
+       -ms-transform: rotate(0deg);  
+       transform: rotate(0deg);  
+   }
+   100% {
+       -webkit-transform: rotate(360deg);  
+       -ms-transform: rotate(360deg);  
+       transform: rotate(360deg);  
+   }
+}
+@keyframes spin {
+   0%   {
+       -webkit-transform: rotate(0deg); 
+       -ms-transform: rotate(0deg); 
+       transform: rotate(0deg);  
+   }
+   100% {
+       -webkit-transform: rotate(360deg);  
+       -ms-transform: rotate(360deg);  
+       transform: rotate(360deg);  
+   }
+} 
+
+.logo-preloader {
+   width: 10%;
+   max-width: 150px; /* Limitar el tamaño máximo de la imagen */
+   margin-bottom: 10px; 
+}
+
+.text-preloader{
+   font-weight: var(--font-black);
+   color: var(--title-color);
+   font-size: 1.2em; 
+   text-align: center; 
+} 
+
+/* Media queries para pantallas superiores a 1024px */
+@media (min-width: 1024px) {
+   .logo-preloader {
+      width: 130px; /* Mantén la imagen con un tamaño fijo */
+      max-width: 150px; /* Limita el tamaño máximo en pantallas grandes */
+   }
+
+   .text-preloader {
+      font-size: 1.2em; /* Mantener el tamaño del texto igual en pantallas grandes */
+   }
+}
+
+/* Media queries para pantallas medianas (768px) */
+@media (max-width: 768px) {
+   .logo-preloader {
+      width: 100px; /* Ajuste para pantallas medianas */
+   }
+
+   .text-preloader {
+      font-size: 1em; /* Ajuste del tamaño del texto en pantallas medianas */
+   }
+}
+
+/* Media queries para pantallas pequeñas (480px) */
+@media (max-width: 480px) {
+   .logo-preloader {
+      width: 80px; /* Ajuste para pantallas móviles pequeñas */
+   }
+
+   .text-preloader {
+      font-size: 0.9em; /* Reducir el tamaño del texto en pantallas pequeñas */
+   }
+}
+
+
+/* .ring{
    width: 500px;
    height: 500px;
    border: 0px solid #FFF;
@@ -2453,16 +2588,4 @@ img {
    100%{
       transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
    }
-}
-
-.logo-preloader {
-   width: 10%; 
-   margin-bottom: 10px; 
-}
-
-.text-preloader{
-   font-weight: var(--font-black);
-   color: var(--title-color);
-   font-size: 1.2em; 
-   text-align: center; 
-}  
+} */

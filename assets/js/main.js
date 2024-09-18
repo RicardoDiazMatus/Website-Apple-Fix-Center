@@ -193,7 +193,7 @@ function resetSubtitle() {
       strings: [""],  // Borrado completo
       typeSpeed: 50,  // Velocidad de escritura (en este caso es borrado)
       backSpeed: 30,  // Velocidad de borrado
-      showCursor: true,
+      showCursor: false,
       loop: false,
       onComplete: function() {
           // Luego de borrar h3, borrar h1

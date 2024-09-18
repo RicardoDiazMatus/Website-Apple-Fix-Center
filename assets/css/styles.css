@@ -376,6 +376,8 @@ img {
    align-self: center;
    margin: 0 auto;
    background-color: transparent;
+  
+   animation: homeIcon 4s cubic-bezier(0.15, 0.85, 0.4, 1.6) infinite; 
 }
 
 .home__data {
@@ -388,6 +390,7 @@ img {
    display: flex;
    align-items: center; /* Alinea el rectángulo y el texto verticalmente */
    padding-top: 1rem;
+   margin-bottom: 1.5rem;
 }
 
 .home__icon {
@@ -414,14 +417,18 @@ img {
 }
 
 
-.home__title {
+.typedText_home__title {
    font-size: var(--big-font-size);
+   color: var(--title-color);
    font-weight: var(--font-black);
    margin-top: 1rem;
+   margin-right: 2.5rem;
+   overflow-wrap: break-word;
 }
 
-.home__subtitle {
+.typedText_home__subtitle {
    font-size: var(--h1-font-size);
+   
    color: var(--title-color);
    font-weight: var(--font-extra-bold);
    margin-bottom: var(--mb-0-75);
@@ -554,12 +561,30 @@ img {
 
 
 .about__img {
-   width: 15.625rem;
+   width: 17.5rem;
    border-radius: 0.5rem;
    /* justify-self: center; */
    align-self: flex-end;
    margin: 0 auto;
+   
+   filter: drop-shadow(0 30px 15px rgba(0, 0, 0, 0.8));  
+   
+   --f: .1; /* the parallax factor (the smaller the better) */
+   --_f: calc(100%*var(--f)/(1 + var(--f)));
+   --_a: calc(90deg*var(--f));  
+   aspect-ratio: calc(1 + var(--f));
+   object-fit: fill;
+   clip-path: inset(0 var(--_f) 0 0 round var(--r));
+   transform: perspective(400px) var(--_t,rotateY(var(--_a)));
+   transition: .3s;
+   cursor: pointer;
+   
 }
+
+ .about__img:hover {
+   clip-path: inset(0 0 0 var(--_f) round var(--r));
+   --_t: translateX(calc(-1*var(--_f))) rotateY(calc(-1*var(--_a)))
+ }
 
 
 
@@ -1115,6 +1140,7 @@ img {
 .services5-icon-img {
    width: 6.875rem; /* Ajusta el tamaño de los íconos si es necesario */
    height: 7.5rem; /* Ajusta el tamaño de los íconos si es necesario */
+   margin-top: 1rem;
    /* display: block;   
    transition: transform 1s ease;*/
    animation: icon5 5s infinite; 
@@ -1177,6 +1203,7 @@ img {
 .services7-icon-img {
    width: 6.25rem; /* Ajusta el tamaño de los íconos si es necesario */
    height: 7.5rem; /* Ajusta el tamaño de los íconos si es necesario */
+   margin-top: 1rem;
    /* display: block;   
    transition: transform 1s ease;*/
    animation: icon7 5s infinite; 
@@ -1381,7 +1408,20 @@ img {
    align-self: center;
    margin: 0 auto;
    background-color: transparent;
+   
 }
+
+.map__img--icon {
+   width: 20rem;
+   border-radius: 0.5rem;
+   justify-self: center;
+   align-self: center;
+   margin: 0 auto;
+   background-color: transparent;
+   filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.8));  
+     
+}
+
 
 .map__data {     
    display: flex;
@@ -1800,9 +1840,7 @@ img {
       height: 1.875rem; /* Ajusta el tamaño de los íconos si es necesario */
    }
 
-   .skills__title{
-      font-size: var(--normal-font-size);
-   }
+   
 
    .qualification__data{
       gap: 0.5rem;
@@ -1841,10 +1879,7 @@ img {
       height: 5rem; /* Ajusta el tamaño de los íconos si es necesario */
    }
 
-   .project__img{
-      width: 12.5rem;
-   }
-
+   
    .testimonial__data,
    .testimonial__header{
       flex-direction: column;
@@ -1977,10 +2012,7 @@ img {
    }
 
    .team__container,
-   .about__container__header,
-   .skills__container,
-   .portfolio__content,
-   .project__container,
+   .about__container__header,   
    .contact__container{
       grid-template-columns: repeat(2, 1fr);
       
@@ -2264,35 +2296,7 @@ img {
       width: 6.875rem; /* Ajusta el tamaño de los íconos si es necesario */
       height: 5rem; /* Ajusta el tamaño de los íconos si es necesario */
    }
-
-   .project__img{
-      width: 20rem;
-   }
-   
-   .portfolio__content{
-      align-items: center;
-   }
-
-   .project{
-      text-align: initial;
-   }
-
-   .project__bg{
-      background: none;
-   }
-
-   .project__container{
-      background-color: var(--first-color-second);
-      border-radius: 1rem;
-      padding: 3rem 2.5rem 0;
-      grid-template-columns: 1fr max-content;
-      column-gap: 3rem;
-   }
-
-   .project__data{
-      padding-top: 0.8rem;
-   }
-
+      
    .footer__container {
       grid-template-columns: repeat(3, 1fr);
     
@@ -2339,25 +2343,13 @@ img {
       grid-template-columns: repeat(4, 1fr);
    }
 
-   .portfolio__content{
-      column-gap: 5rem;
-   }
-
-   .swiper-portfolio-icon{
-      font-size: 3.5rem;
-   }
-
    .swiper-button-prev{
       left: -3.5rem
    }
 
    .swiper-button-next{
       right: -3.5rem
-   }
-
-   .portfolio__container > .swiper-pagination{ 
-      bottom: -4.5rem;
-   }
+   } 
 
    .contact__form{
       width: 28.75rem;
@@ -2425,7 +2417,7 @@ img {
    border-top-color: #3498db;
    filter: drop-shadow( 0 5px 5px rgba(0, 0, 0, 0.5));
    transition: border-top-color 0.3s ease-in-out;
-   -webkit-animation: spin 2s linear infinite; 
+   animation: spin 2s linear infinite; 
    animation: spin 2s linear infinite;  
    transform: translate(-50%, -50%); 
 } 
@@ -2441,9 +2433,9 @@ img {
    border: 6px solid transparent;
    border-top-color: rgba(231, 76, 60, 0.8);
    filter: drop-shadow( 0 5px 5px rgba(0, 0, 0, 0.5));
-    transition: border-top-color 0.3s ease-in-out;
-   -webkit-animation: spin 3s linear infinite; 
-     animation: spin 3s linear infinite; 
+   transition: border-top-color 0.3s ease-in-out;
+   animation: spin 3s linear infinite; 
+   animation: spin 3s linear infinite; 
 }
 
 .loader:after {
@@ -2457,33 +2449,33 @@ img {
    border: 6px solid transparent;
    border-top-color: rgba(249, 201, 34, 0.8);
    filter: drop-shadow( 0 5px 5px rgba(0, 0, 0, 0.5));
-    transition: border-top-color 0.3s ease-in-out;
-   -webkit-animation: spin 1.5s linear infinite; 
-     animation: spin 1.5s linear infinite; 
+   transition: border-top-color 0.3s ease-in-out;
+   animation: spin 1.5s linear infinite; 
+   animation: spin 1.5s linear infinite; 
 }
 
-@-webkit-keyframes spin {
+@keyframes spin {
    0%   {
-       -webkit-transform: rotate(0deg);  
-       -ms-transform: rotate(0deg);  
-       transform: rotate(0deg);  
+      transform: rotate(0deg);  
+      transform: rotate(0deg);  
+      transform: rotate(0deg);  
    }
    100% {
-       -webkit-transform: rotate(360deg);  
-       -ms-transform: rotate(360deg);  
-       transform: rotate(360deg);  
+      transform: rotate(360deg);  
+      transform: rotate(360deg);  
+      transform: rotate(360deg);  
    }
 }
 @keyframes spin {
    0%   {
-       -webkit-transform: rotate(0deg); 
-       -ms-transform: rotate(0deg); 
-       transform: rotate(0deg);  
+      transform: rotate(0deg); 
+      transform: rotate(0deg); 
+      transform: rotate(0deg);  
    }
    100% {
-       -webkit-transform: rotate(360deg);  
-       -ms-transform: rotate(360deg);  
-       transform: rotate(360deg);  
+      transform: rotate(360deg);  
+      transform: rotate(360deg);  
+      transform: rotate(360deg);  
    }
 } 
 
@@ -2499,6 +2491,8 @@ img {
    font-size: 1.2em; 
    text-align: center; 
 } 
+
+
 
 /* Media queries para pantallas superiores a 1024px */
 @media (min-width: 1024px) {
@@ -2534,6 +2528,17 @@ img {
    }
 }
 
+@keyframes homeIcon {
+   0%, 100% {
+       transform: scale(0.9);
+       border-radius: var(--borderRadiusHover);
+   }
+   
+   50% {
+       transform: scale(1); /* Ajustado a 1 para que la expansión sea más notoria */
+       border-radius: var(--borderRadius);
+   }
+}
 
 /* .ring{
    width: 500px;

@@ -135,3 +135,86 @@ document.addEventListener("DOMContentLoaded", function() {
       console.error("No se encontró el preloader o el contenido principal en el DOM");
   }
 });
+
+// Animación para h1
+function animateTitle() {
+  var typingEffectTitle = new Typed(".typedText_home__title", {
+      strings: ["Servicio Técnico"],
+      typeSpeed: 100,
+      backSpeed: 50,
+      backDelay: 3000,  // Mantener h1 visible por más tiempo
+      showCursor: false,
+      loop: false,
+      onComplete: function() {
+          // Inicia la animación de h3 al terminar h1
+          animateSubtitle();
+      },
+      
+  });
+}
+
+// Animación para h3
+function animateSubtitle() {
+  var typingEffectSubtitle = new Typed(".typedText_home__subtitle", {
+      strings: ["para dispositivos móviles"],
+      typeSpeed: 100,
+      backSpeed: 50,
+      backDelay: 2000,
+      showCursor: false,
+      loop: false,
+      onComplete: function() {
+          // Reiniciar después de que h3 complete su ciclo
+          setTimeout(function() {
+              // Borrar h3 primero
+              resetSubtitle();
+          }, 1000);
+      }
+  });
+}
+
+// Borrar h1
+function resetTitle() {
+  var typingEffectTitle = new Typed(".typedText_home__title", {
+      strings: [""],  // Borrado completo
+      typeSpeed: 50,  // Velocidad de escritura (en este caso es borrado)
+      backSpeed: 30,  // Velocidad de borrado
+      showCursor: false,
+      loop: false,
+      onComplete: function() {
+          // Volver a iniciar la animación completa
+          resetAnimations();
+      }
+  });
+}
+
+// Borrar h3
+function resetSubtitle() {
+  var typingEffectSubtitle = new Typed(".typedText_home__subtitle", {
+      strings: [""],  // Borrado completo
+      typeSpeed: 50,  // Velocidad de escritura (en este caso es borrado)
+      backSpeed: 30,  // Velocidad de borrado
+      showCursor: true,
+      loop: false,
+      onComplete: function() {
+          // Luego de borrar h3, borrar h1
+          resetTitle();
+      }
+  });
+}
+
+// Reiniciar las animaciones de h1 y h3
+function resetAnimations() {
+  // Limpieza de ambos textos
+  document.querySelector(".typedText_home__title").innerHTML = "";
+  document.querySelector(".typedText_home__subtitle").innerHTML = "";
+
+  // Iniciar de nuevo la animación de h1
+  setTimeout(function() {
+      animateTitle();
+  }, 500);
+}
+
+// Iniciar la animación cuando el DOM esté cargado
+document.addEventListener("DOMContentLoaded", function() {
+  animateTitle();  // Comienza la animación con h1
+});

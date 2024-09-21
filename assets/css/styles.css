@@ -2010,6 +2010,10 @@ img {
 
    }
 
+   .team__container:hover .overlay {
+      transform: translateY(-50px); 
+   }
+
    
    .map__content{
       grid-template-columns: repeat(2, 1fr);
@@ -2231,9 +2235,11 @@ img {
   }
   .team__img {
    width: 20rem;
-   transform: translateY(-30px);
-  
+   transform: translateY(-30px); 
 
+}
+.team__container:hover .overlay {
+   transform: translateY(-30px); 
 }
 
    .team__container {

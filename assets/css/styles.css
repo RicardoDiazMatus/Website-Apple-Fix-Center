@@ -68,7 +68,8 @@
 }
 
 /* Font size for large devices */
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) { */
+   @media (width >= 0px) and (width <= 768px){  
    :root {
       --big-font-size: 2.5rem;
       --h1-font-size: 1.75rem;
@@ -253,7 +254,8 @@ img {
    color: var(--first-color);
 }
 
-@media screen and (max-width: 767px) {
+/* @media screen and (max-width: 767px) { */
+   @media (width >= 0px) and (width <= 767px){  
    .nav__menu {
       position: fixed;
       bottom: -100%;
@@ -1832,12 +1834,12 @@ img {
    background-color: var(--text-color-light);
 }
 
+
+
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
-@media screen and (max-width: 350px){
-     
 
-   
+   @media (width <= 350px) {
    .container{
       margin-left: var(--mb-1);
       margin-right: var(--mb-1);
@@ -1962,9 +1964,7 @@ img {
 
 
 /* For medium devices */
-@media screen and (min-width: 586px){
-
-   
+@media (width >= 586px) {
 
 
    .home__content{
@@ -2005,6 +2005,7 @@ img {
 
    .team__img {
       width: 17.5rem;
+      transform: translateY(-50px);
      
 
    }
@@ -2085,10 +2086,10 @@ img {
   .footer__logo span {   
    margin-left: 0.45rem;
    }
+
 }
 
-
-@media screen and (min-width: 768px){
+   @media (width >= 768px) {
    .container{
       margin-left: auto;
       margin-right: auto;
@@ -2098,7 +2099,7 @@ img {
       margin: 0;
    }
 
-   .home__section{
+   .home__section{ 
       padding: 6rem 0 2rem;
    }
    .about__section{
@@ -2230,6 +2231,7 @@ img {
   }
   .team__img {
    width: 20rem;
+   transform: translateY(-30px);
   
 
 }
@@ -2351,7 +2353,9 @@ img {
 }
 
 /* For large devices */
-@media screen and (min-width: 1024px){
+
+@media (width > 1024px) {
+ 
    .header,
    .main,
    .footer__container{
@@ -2410,6 +2414,8 @@ img {
    margin-left: 4.25rem;
 }
 }
+
+
 
 /* .preloader{  */
       /* background-color: #141d25; */
@@ -2534,7 +2540,7 @@ img {
 
 
 /* Media queries para pantallas superiores a 1024px */
-@media (min-width: 1024px) {
+@media (width > 1024px) {
    .logo-preloader {
       width: 130px; /* Mantén la imagen con un tamaño fijo */
       max-width: 150px; /* Limita el tamaño máximo en pantallas grandes */
@@ -2546,7 +2552,7 @@ img {
 }
 
 /* Media queries para pantallas medianas (768px) */
-@media (max-width: 768px) {
+@media (width >= 768px) {
    .logo-preloader {
       width: 100px; /* Ajuste para pantallas medianas */
    }
@@ -2557,7 +2563,7 @@ img {
 }
 
 /* Media queries para pantallas pequeñas (480px) */
-@media (max-width: 480px) {
+@media (width <= 350px) {
    .logo-preloader {
       width: 80px; /* Ajuste para pantallas móviles pequeñas */
    }

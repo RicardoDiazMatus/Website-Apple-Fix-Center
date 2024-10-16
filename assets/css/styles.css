@@ -940,6 +940,7 @@ img {
 
  .team__description {
    text-align: center;
+   font-size: var(--h3-font-size);
    font-weight: var(--font-semi-bold);
    margin-bottom: var(--mb-2-5);
    /* color: var(--title-color); */
@@ -1536,7 +1537,8 @@ img {
 }
 
 .map__description {
-   font-size: var(--normal-font-size);
+   /* font-size: var(--normal-font-size); */
+   font-size: 1.05rem;
    font-weight: var(--font-semi-bold);
    margin-top: var(--mb-1-5);   
    overflow-wrap: break-word; /* Rompe las palabras largas para evitar el desbordamiento */   

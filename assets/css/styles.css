@@ -747,6 +747,7 @@ img {
  .team__subtitle {
    display: block;
    font-size: var(--h2-font-size);
+   margin-top: var(--mb-0-25);
    margin-bottom: var(--mb-3);
    font-weight: var(--font-semi-bold);
    text-align: center;
@@ -2252,7 +2253,7 @@ img {
    .team__description {
       text-align: initial;
       /* text-align: justify; */
-      font-size: var(--normal-font-size);
+      font-size: var(--h3-font-size);
       font-weight: var(--font-semi-bold);
       
    }
